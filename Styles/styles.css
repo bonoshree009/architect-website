@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
  }
-.nav-title{
+.section-title{
     font-size: 2rem;
     font-weight: 700;
     color: #131313;
@@ -22,7 +22,6 @@
 nav > ul{
     display: flex;
 }
-
 nav  li {
      list-style: none;
      margin-right: 30px;
@@ -36,16 +35,11 @@ nav li a{
 .banner-content{
     max-width: 800px;
     text-align: center;
-    /* margin: 1rem 5rem; */
     margin: 20px auto;
 }
 .banner-title{
     font-weight: 700;
     font-size: 2.8rem;
-}
-.banner-description{
-    color: #424242;
-
 }
 .btn-primary{
     background-color: #FF900E;
@@ -59,19 +53,48 @@ nav li a{
     .header{
         padding: 10px;
     }
-    nav{
+    nav ,.teams-container{
         flex-direction: column;
     }
-    nav  li {
-        /* margin-left: 0px; */
-
-}
+    .teamsimg{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .header{
         padding: 10px;
     }
-    nav{
+    nav,.teams-container{
         flex-direction: column;
     }
+}
+
+/* main */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.teamsimg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.teamstext{
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.gray{
+    color: #424242;
+}
+.teams-text-two{
+    color: #FF900E;
 }
